@@ -1,0 +1,27 @@
+# Application settings
+settings:
+  database: "data/jobs.json"
+  generated_dir: "generated"
+  max_jobs_per_source: 50
+  min_match_score: 0.35
+  open_browser_on_prepare: true
+
+# Free public sources (no API key required)
+sources:
+  remoteok:
+    enabled: true
+    url: "https://remoteok.com/api"
+  remotive:
+    enabled: true
+    url: "https://remotive.com/api/remote-jobs"
+  arbeitnow:
+    enabled: true
+    url: "https://www.arbeitnow.com/api/job-board-api"
+
+# Optional paid / key-based sources
+optional_sources:
+  adzuna:
+    enabled: false
+    app_id: ""
+    app_key: ""
+    country: "us"

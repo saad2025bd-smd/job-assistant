@@ -1,0 +1,62 @@
+# ============================================================
+# Your Job Search Profile
+# Copy this file to profile.yaml and fill in your details
+# ============================================================
+
+personal:
+  full_name: "Your Full Name"
+  email: "you@example.com"
+  phone: "+1-555-000-0000"
+  location: "City, Country"          # or "Remote"
+  linkedin: "https://linkedin.com/in/yourprofile"
+  portfolio: "https://yourportfolio.com"
+  github: "https://github.com/yourusername"
+
+# Target roles (used for search keywords)
+target_roles:
+  - "Software Engineer"
+  - "Backend Developer"
+  - "Python Developer"
+  - "Full Stack Engineer"
+
+# Skills & technologies (used for matching + cover letters)
+skills:
+  languages: ["Python", "JavaScript", "TypeScript", "SQL"]
+  frameworks: ["FastAPI", "Django", "React", "Node.js"]
+  tools: ["Docker", "AWS", "PostgreSQL", "Git", "Linux"]
+  soft_skills: ["Problem solving", "Communication", "Team collaboration"]
+
+# Experience summary (short paragraphs work best)
+experience_summary: |
+  Software engineer with 4+ years of experience building scalable backend systems
+  and APIs. Strong focus on Python, cloud infrastructure, and clean architecture.
+  Previously worked at mid-size startups delivering high-traffic services.
+
+# Work preferences
+preferences:
+  remote: true                    # true / false / "hybrid"
+  locations: ["Remote", "Europe", "US"]   # preferred locations
+  salary_min: 80000               # annual, in USD (optional)
+  salary_currency: "USD"
+  experience_level: "mid"         # junior / mid / senior / lead
+  job_types: ["full-time", "contract"]
+  exclude_keywords:               # skip jobs containing these
+    - "unpaid"
+    - "internship"
+    - "clearance required"
+
+# Optional: paths to your master documents
+documents:
+  resume_pdf: "path/to/your_resume.pdf"
+  resume_text: |                  # plain text version helps AI tailoring
+    YOUR NAME
+    Software Engineer
+
+    EXPERIENCE
+    ...
+
+# Cover letter style
+cover_letter:
+  tone: "professional"            # professional / friendly / concise
+  length: "medium"                # short / medium / long
+  highlight_achievements: true
