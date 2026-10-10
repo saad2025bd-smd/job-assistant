@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from datetime import datetime
-from sources.base import Job
+from base import Job
 
 
 class JobDB:

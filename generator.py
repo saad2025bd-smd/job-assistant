@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Dict, Any, Optional
 from datetime import datetime
 from jinja2 import Template
-from sources.base import Job
+from base import Job
 import re
 
 

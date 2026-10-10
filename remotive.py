@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 from typing import List, Optional
-from .base import Job
+from base import Job
 
 
 def fetch_jobs(search: Optional[str] = None, max_jobs: int = 50) -> List[Job]:

@@ -8,8 +8,8 @@ from typing import Optional, Dict, Any, List
 import yaml
 from datetime import datetime
 
-from sources import remoteok, remotive, arbeitnow
-from sources.base import Job
+import remoteok, remotive, arbeitnow
+from base import Job
 from matcher import rank_jobs, score_job
 from generator import generate_cover_letter, generate_application_notes, save_materials
 from db import JobDB

@@ -1,6 +1,6 @@
 """Simple keyword + preference based job matching."""
 from typing import List, Dict, Any, Tuple
-from sources.base import Job
+from base import Job
 import re
 
 
