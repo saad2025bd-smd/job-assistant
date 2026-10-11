@@ -46,12 +46,22 @@ def generate_cover_letter(job: Job, profile: Dict[str, Any]) -> str:
     personal = profile.get("personal", {})
     skills = profile.get("skills", {})
     prefs = profile.get("cover_letter", {})
-    experience = profile.get("experience_summary", "").strip()
+    # Prefer full CV text when available, else short summary
+    documents = profile.get("documents", {}) or {}
+    cv_text = (documents.get("cv_text") or "").strip()
+    experience = (profile.get("experience_summary") or "").strip()
+    if cv_text and len(cv_text) > len(experience):
+        # Use a condensed slice of the CV for the letter body
+        experience = cv_text[:900].rsplit(" ", 1)[0] + ("…" if len(cv_text) > 900 else "")
 
     # Build skill highlights relevant to the job
     all_skills = []
     for key in ("languages", "frameworks", "tools"):
         all_skills.extend(skills.get(key, []))
+    # Merge skills detected from CV
+    for s in (documents.get("cv_skills") or []):
+        if s not in all_skills:
+            all_skills.append(s)
 
     job_text = f"{job.title} {job.description} {' '.join(job.tags)}".lower()
     relevant_skills = [s for s in all_skills if s.lower() in job_text]

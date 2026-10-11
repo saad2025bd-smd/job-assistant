@@ -39,6 +39,10 @@ def score_job(job: Job, profile: Dict[str, Any]) -> Tuple[float, Dict[str, Any]]
     all_skills = []
     for key in ("languages", "frameworks", "tools"):
         all_skills.extend([s.lower() for s in skills_section.get(key, [])])
+    # Skills extracted from uploaded CV
+    docs = profile.get("documents", {}) or {}
+    for s in (docs.get("cv_skills") or []):
+        all_skills.append(str(s).lower())
 
     skill_hits = sum(1 for s in all_skills if s in text or s in tokens)
     if all_skills:
