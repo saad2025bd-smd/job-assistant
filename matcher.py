@@ -37,7 +37,7 @@ def score_job(job: Job, profile: Dict[str, Any]) -> Tuple[float, Dict[str, Any]]
     # --- Skills match ---
     skills_section = profile.get("skills", {})
     all_skills = []
-    for key in ("languages", "frameworks", "tools"):
+    for key in ("languages", "frameworks", "tools", "soft_skills"):
         all_skills.extend([s.lower() for s in skills_section.get(key, [])])
     # Skills extracted from uploaded CV
     docs = profile.get("documents", {}) or {}

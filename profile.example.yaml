@@ -1,62 +1,92 @@
-# ============================================================
-# Your Job Search Profile
-# Copy this file to profile.yaml and fill in your details
-# ============================================================
-
 personal:
-  full_name: "Your Full Name"
-  email: "you@example.com"
-  phone: "+1-555-000-0000"
-  location: "City, Country"          # or "Remote"
-  linkedin: "https://linkedin.com/in/yourprofile"
-  portfolio: "https://yourportfolio.com"
-  github: "https://github.com/yourusername"
+  full_name: "Saad Muhammed"
+  email: "saad.2025bd@gmail.com"
+  phone: "+880 1804 254 356"
+  location: "Dhaka, Bangladesh"
+  linkedin: "https://linkedin.com/in/saad-muhammed-2243821b6"
+  portfolio: ""
+  github: ""
 
-# Target roles (used for search keywords)
 target_roles:
-  - "Software Engineer"
-  - "Backend Developer"
-  - "Python Developer"
-  - "Full Stack Engineer"
+  - "Commercial Executive"
+  - "Business Development Manager"
+  - "B2B Sales Manager"
+  - "SaaS Sales Executive"
+  - "Account Executive"
+  - "Sales Development Representative"
+  - "Key Account Manager"
+  - "Freight Sales Executive"
+  - "Logistics Sales Manager"
+  - "Telesales Team Leader"
 
-# Skills & technologies (used for matching + cover letters)
 skills:
-  languages: ["Python", "JavaScript", "TypeScript", "SQL"]
-  frameworks: ["FastAPI", "Django", "React", "Node.js"]
-  tools: ["Docker", "AWS", "PostgreSQL", "Git", "Linux"]
-  soft_skills: ["Problem solving", "Communication", "Team collaboration"]
+  languages: []
+  frameworks: []
+  tools:
+    - "CRM"
+    - "Salesforce"
+    - "HubSpot"
+    - "TMS"
+    - "FMS"
+    - "WMS"
+    - "Microsoft Excel"
+    - "Microsoft Word"
+    - "Microsoft PowerPoint"
+    - "Microsoft Outlook"
+    - "Zoom"
+    - "LinkedIn Sales Navigator"
+  soft_skills:
+    - "B2B Sales"
+    - "Business Development"
+    - "Lead Generation"
+    - "Cold Calling"
+    - "Telemarketing"
+    - "Key Account Management"
+    - "Contract Negotiation"
+    - "Solution Selling"
+    - "Customer Onboarding"
+    - "Team Leadership"
+    - "Pipeline Management"
+    - "International Client Management"
 
-# Experience summary (short paragraphs work best)
 experience_summary: |
-  Software engineer with 4+ years of experience building scalable backend systems
-  and APIs. Strong focus on Python, cloud infrastructure, and clean architecture.
-  Previously worked at mid-size startups delivering high-traffic services.
+  Senior Commercial and B2B Sales Professional with 7+ years across telesales, logistics,
+  freight forwarding, SaaS, telecommunications, and sales leadership. Experienced in lead
+  generation, prospecting, key account management, solution selling, quotation and contract
+  negotiation, CRM management, customer onboarding, and team leadership. Strong background
+  with international clients and remote teams. Open to remote worldwide opportunities and
+  available to join immediately.
 
-# Work preferences
 preferences:
-  remote: true                    # true / false / "hybrid"
-  locations: ["Remote", "Europe", "US"]   # preferred locations
-  salary_min: 80000               # annual, in USD (optional)
+  remote: true
+  locations:
+    - "Remote"
+    - "Worldwide"
+    - "Middle East"
+    - "Saudi Arabia"
+    - "UAE"
+    - "Malaysia"
+    - "USA"
+    - "Europe"
+  salary_min: null
   salary_currency: "USD"
-  experience_level: "mid"         # junior / mid / senior / lead
-  job_types: ["full-time", "contract"]
-  exclude_keywords:               # skip jobs containing these
+  experience_level: "senior"
+  job_types:
+    - "full-time"
+    - "contract"
+  exclude_keywords:
     - "unpaid"
     - "internship"
-    - "clearance required"
+    - "intern only"
+    - "entry level only"
 
-# Optional: paths to your master documents
 documents:
-  resume_pdf: "path/to/your_resume.pdf"
-  resume_text: |                  # plain text version helps AI tailoring
-    YOUR NAME
-    Software Engineer
+  cv_text: ""
+  cv_skills: []
+  cv_filename: ""
+  cv_word_count: 0
 
-    EXPERIENCE
-    ...
-
-# Cover letter style
 cover_letter:
-  tone: "professional"            # professional / friendly / concise
-  length: "medium"                # short / medium / long
+  tone: "professional"
+  length: "medium"
   highlight_achievements: true

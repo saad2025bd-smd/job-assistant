@@ -1,62 +1,143 @@
-# ============================================================
-# Your Job Search Profile
-# Copy this file to profile.yaml and fill in your details
-# ============================================================
-
 personal:
-  full_name: "Your Full Name"
-  email: "you@example.com"
-  phone: "+1-555-000-0000"
-  location: "City, Country"          # or "Remote"
-  linkedin: "https://linkedin.com/in/yourprofile"
-  portfolio: "https://yourportfolio.com"
-  github: "https://github.com/yourusername"
-
-# Target roles (used for search keywords)
+  full_name: Saad Muhammed
+  email: saad.2025bd@gmail.com
+  phone: +880 1804 254 356
+  location: Dhaka, Bangladesh
+  linkedin: https://linkedin.com/in/saad-muhammed-2243821b6
+  portfolio: ''
+  github: ''
 target_roles:
-  - "Software Engineer"
-  - "Backend Developer"
-  - "Python Developer"
-  - "Full Stack Engineer"
-
-# Skills & technologies (used for matching + cover letters)
+- Commercial Executive
+- Business Development Manager
+- B2B Sales Manager
+- SaaS Sales Executive
+- Account Executive
+- Sales Development Representative
+- Key Account Manager
+- Freight Sales Executive
+- Logistics Sales Manager
+- Telesales Team Leader
 skills:
-  languages: ["Python", "JavaScript", "TypeScript", "SQL"]
-  frameworks: ["FastAPI", "Django", "React", "Node.js"]
-  tools: ["Docker", "AWS", "PostgreSQL", "Git", "Linux"]
-  soft_skills: ["Problem solving", "Communication", "Team collaboration"]
+  languages: []
+  frameworks: []
+  tools:
+  - CRM
+  - Salesforce
+  - HubSpot
+  - TMS
+  - FMS
+  - WMS
+  - Microsoft Excel
+  - Microsoft Word
+  - Microsoft PowerPoint
+  - Microsoft Outlook
+  - Zoom
+  - LinkedIn Sales Navigator
+  soft_skills:
+  - B2B Sales
+  - Business Development
+  - Lead Generation
+  - Cold Calling
+  - Telemarketing
+  - Key Account Management
+  - Contract Negotiation
+  - Solution Selling
+  - Customer Onboarding
+  - Team Leadership
+  - Pipeline Management
+  - International Client Management
+experience_summary: 'Senior Commercial and B2B Sales Professional with 7+ years across
+  telesales, logistics,
 
-# Experience summary (short paragraphs work best)
-experience_summary: |
-  Software engineer with 4+ years of experience building scalable backend systems
-  and APIs. Strong focus on Python, cloud infrastructure, and clean architecture.
-  Previously worked at mid-size startups delivering high-traffic services.
+  freight forwarding, SaaS, telecommunications, and sales leadership. Experienced
+  in lead
 
-# Work preferences
+  generation, prospecting, key account management, solution selling, quotation and
+  contract
+
+  negotiation, CRM management, customer onboarding, and team leadership. Strong background
+
+  with international clients and remote teams. Open to remote worldwide opportunities
+  and
+
+  available to join immediately.
+
+  '
 preferences:
-  remote: true                    # true / false / "hybrid"
-  locations: ["Remote", "Europe", "US"]   # preferred locations
-  salary_min: 80000               # annual, in USD (optional)
-  salary_currency: "USD"
-  experience_level: "mid"         # junior / mid / senior / lead
-  job_types: ["full-time", "contract"]
-  exclude_keywords:               # skip jobs containing these
-    - "unpaid"
-    - "internship"
-    - "clearance required"
-
-# Optional: paths to your master documents
+  remote: true
+  locations:
+  - Remote
+  - Worldwide
+  - Middle East
+  - Saudi Arabia
+  - UAE
+  - Malaysia
+  - USA
+  - Europe
+  salary_min: null
+  salary_currency: USD
+  experience_level: senior
+  job_types:
+  - full-time
+  - contract
+  exclude_keywords:
+  - unpaid
+  - internship
+  - intern only
+  - entry level only
 documents:
-  resume_pdf: "path/to/your_resume.pdf"
-  resume_text: |                  # plain text version helps AI tailoring
-    YOUR NAME
-    Software Engineer
+  cv_text: 'SAAD MUHAMMED — Senior Commercial Executive | Telesales & Business Development
+    | Logistics & SaaS
 
-    EXPERIENCE
-    ...
+    Dhaka, Bangladesh | Open to remote worldwide | Available immediately
 
-# Cover letter style
+
+    7+ years: B2B sales, business development, freight forwarding, logistics SaaS
+    (TMS/FMS/WMS), telesales, key account management, solution selling, quotation
+    & contract negotiation, CRM, customer onboarding, team leadership.
+
+
+    Experience:
+
+    - Sr. Commercial Executive – Logistics SaaS (CAMION, Saudi Arabia, Remote) Oct
+    2025–Oct 2026: B2B SaaS sales, prospecting, demos (TMS/FMS), full commercial cycle,
+    onboarding.
+
+    - Operation & Commercial Specialist – Freight Forwarding (SEDRES GROUP, KSA) 2023–2025:
+    Sea/Air/Land freight sales, key accounts (L&T, McDermott, NPCC), SLA negotiation,
+    international networks (SCN, GLA, JCtrans).
+
+    - QA & Sales Expert – Telemarketing (ITD Solutions, Florida, USA, Remote) 2021–2022:
+    Outbound sales, QA coaching, CRM, quotations.
+
+    - Sales Team Leader – Telemarketing (Offshore Partners, Malaysia) 2018–2021: Team
+    KPIs, coaching, inbound/outbound sales.
+
+
+    Education: BSc Business Information Technology, Limkokwing University, Malaysia.
+
+    Skills: B2B Sales, BD, Lead Gen, Cold Calling, KAM, Negotiation, CRM, SaaS selling,
+    Freight/Logistics, Team Leadership.
+
+    '
+  cv_skills:
+  - B2B Sales
+  - Business Development
+  - SaaS
+  - CRM
+  - TMS
+  - FMS
+  - WMS
+  - Lead Generation
+  - Key Account Management
+  - Contract Negotiation
+  - Freight Forwarding
+  - Logistics
+  - Team Leadership
+  - Telemarketing
+  cv_filename: Saad Resume 2026.pdf
+  cv_word_count: 161
 cover_letter:
-  tone: "professional"            # professional / friendly / concise
-  length: "medium"                # short / medium / long
+  tone: professional
+  length: medium
   highlight_achievements: true

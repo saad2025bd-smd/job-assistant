@@ -83,6 +83,17 @@ SKILL_CANDIDATES = [
     "git", "jira", "figma", "salesforce", "tableau", "power bi", "excel",
     "rest", "graphql", "grpc", "microservices", "agile", "scrum",
     "machine learning", "deep learning", "nlp", "computer vision", "llm", "openai",
+    # sales / commercial / logistics
+    "b2b", "b2c", "saas", "crm", "salesforce", "hubspot", "pipedrive",
+    "telesales", "telemarketing", "cold calling", "lead generation", "prospecting",
+    "account management", "key account", "business development", "solution selling",
+    "negotiation", "quotation", "pricing", "pipeline", "onboarding",
+    "freight", "logistics", "freight forwarding", "supply chain", "tms", "fms", "wms",
+    "sea freight", "air freight", "land freight", "shipping",
+    "team leadership", "coaching", "kpi", "sales reporting",
+    "microsoft excel", "microsoft word", "microsoft powerpoint", "microsoft outlook",
+    "zoom", "linkedin", "sales navigator",
+
 ]
 
 

@@ -91,7 +91,7 @@ def google_search_url(query: str) -> str:
 
 
 def related_google_queries(profile: dict, job_title: str = "", company: str = "") -> list:
-    """Suggest positive, related Google searches."""
+    """Suggest positive, related Google searches for commercial / sales roles."""
     roles = profile.get("target_roles") or []
     prefs = profile.get("preferences") or {}
     locs = prefs.get("locations") or ["Remote"]
@@ -102,18 +102,20 @@ def related_google_queries(profile: dict, job_title: str = "", company: str = ""
         queries.append((label, q))
 
     if job_title and company:
-        add(f"Similar to {job_title[:40]}", f"{job_title} jobs remote")
-        add(f"More at {company}", f"{company} careers OR jobs hiring")
-        add(f"{job_title} hiring now", f"{job_title} hiring now remote")
+        add(f"Similar: {job_title[:36]}", f'"{job_title}" jobs remote OR worldwide')
+        add(f"Careers at {company[:28]}", f"{company} careers OR jobs hiring commercial OR sales")
+        add(f"{job_title[:30]} hiring", f"{job_title} hiring now remote")
 
-    for role in roles[:4]:
-        loc = "remote" if remote else (locs[0] if locs else "")
-        add(f"{role} roles", f"{role} {loc} jobs".strip())
-        add(f"{role} near me / open", f"{role} jobs hiring")
+    for role in roles[:5]:
+        loc_bit = "remote" if remote else (locs[0] if locs else "")
+        add(f"{role}", f"{role} {loc_bit} jobs".strip())
+        add(f"{role} open roles", f"{role} jobs hiring 2026")
 
-    if remote:
-        add("Remote tech jobs", "remote software OR developer OR engineer jobs")
-    # dedupe by query
+    # Strong defaults for this profile domain
+    add("Remote B2B / SaaS sales", "remote B2B OR SaaS Account Executive OR Business Development jobs")
+    add("Logistics / freight sales", "remote freight OR logistics sales OR commercial executive jobs")
+    add("Middle East commercial roles", "commercial executive OR business development jobs Saudi OR UAE OR remote")
+
     seen = set()
     out = []
     for label, q in queries:
@@ -121,7 +123,7 @@ def related_google_queries(profile: dict, job_title: str = "", company: str = ""
         if key not in seen:
             seen.add(key)
             out.append((label, q))
-    return out[:10]
+    return out[:12]
 
 def profile_completeness(profile: dict):
     checks = []
@@ -140,7 +142,7 @@ def profile_completeness(profile: dict):
 
 def render_sidebar():
     st.sidebar.markdown("## 💼 Job Assistant")
-    st.sidebar.caption("Find roles · Match your profile · Prep applications")
+    st.sidebar.caption("B2B · SaaS · Logistics · Business Development")
     page = st.sidebar.radio(
         "Go to",
         ["Home", "Search Jobs", "My Jobs", "Prepare Application", "Profile & CV", "Settings"],
@@ -168,7 +170,7 @@ def render_sidebar():
 
 
 def page_home():
-    st.markdown("### Welcome — let's get you hired")
+    st.markdown("### Welcome, Saad — commercial roles that fit you")
     profile = load_profile()
     gq = related_google_queries(profile)
     if gq:

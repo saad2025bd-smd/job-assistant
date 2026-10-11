@@ -66,13 +66,13 @@ def generate_cover_letter(job: Job, profile: Dict[str, Any]) -> str:
     job_text = f"{job.title} {job.description} {' '.join(job.tags)}".lower()
     relevant_skills = [s for s in all_skills if s.lower() in job_text]
     if not relevant_skills:
-        relevant_skills = all_skills[:5]
+        relevant_skills = all_skills[:6]
 
-    skill_phrase = ", ".join(relevant_skills[:6])
+    skill_phrase = ", ".join(relevant_skills[:6]) if relevant_skills else "B2B sales and business development"
 
     intro = (
-        f"With my background in {skill_phrase}, I believe I would be a strong fit for this role. "
-        f"I am particularly excited about the opportunity to contribute at {job.company}."
+        f"With my background in {skill_phrase}, I believe I would be a strong fit for the {job.title} role. "
+        f"I am particularly interested in contributing to {job.company}'s growth and commercial goals."
     )
 
     body_parts = []
